@@ -1,0 +1,2 @@
+asset_id,local_path,purpose,category,source_url,source_domain,source_title,original_filename,downloaded_at,copyright_status,replacement_required,notes
+A001,src/App.tsx#toolIcon,商品中性示意图,自制SVG,,,,,2026-07-21,project-owned,false,代码生成矢量图

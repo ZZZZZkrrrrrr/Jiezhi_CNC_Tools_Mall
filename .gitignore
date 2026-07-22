@@ -1,0 +1,26 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+
+# Local Cloudflare state and credentials
+.wrangler/
+.dev.vars
+.env
+.env.*
+
+# Test and compiler output
+test-results/
+playwright-report/
+coverage/
+*.tsbuildinfo
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*

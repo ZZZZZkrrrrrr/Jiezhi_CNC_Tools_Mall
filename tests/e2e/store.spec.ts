@@ -1,0 +1,4 @@
+import {test,expect} from '@playwright/test';
+test('关键页面视觉快照',async({page},testInfo)=>{await page.goto('/');await page.screenshot({path:`reference/screenshots/home-${testInfo.project.name}.png`});await page.goto('/products');await page.screenshot({path:`reference/screenshots/catalog-${testInfo.project.name}.png`})});
+test('首页到商品详情与采购车流程',async({page})=>{await page.goto('/');await expect(page.getByRole('heading',{name:/让每一次切削/})).toBeVisible();await page.goto('/product/p1');await expect(page.getByText('PT-TNMG1604').first()).toBeVisible();await page.getByRole('button',{name:'加入采购车',exact:true}).click();await page.goto('/cart');await expect(page.getByText('精密负前角车削刀片')).toBeVisible()});
+test('型号搜索',async({page})=>{await page.goto('/');await page.getByLabel('搜索商品').fill('HSK-A63');await page.getByTestId('global-search').click();await expect(page.getByText('HSK 高精度液压刀柄').first()).toBeVisible()});

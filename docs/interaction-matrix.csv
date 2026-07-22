@@ -1,0 +1,13 @@
+source,control,target_or_state,test_status
+首页,商品卡片,商品详情,passed
+全局,型号搜索,搜索结果,passed
+列表,分类筛选,结果刷新,passed
+列表,材质筛选,结果刷新,passed
+列表,快速加购,采购车状态,passed
+详情,规格与数量,选中与MOQ校验,passed
+详情,收藏按钮,收藏状态,passed
+采购车,增减与删除,汇总更新,passed
+采购车,提交询价,询价表单,passed
+询价,必填校验,浏览器校验,passed
+询价,提交,成功反馈,passed
+全局,币种切换,CNY/USD显示,passed

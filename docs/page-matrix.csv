@@ -1,0 +1,9 @@
+page_id,page_name,entry,route,implementation_status
+P01,首页,主导航,/,done
+P02,商品分类与列表,全部商品分类,/products,done
+P03,搜索结果,顶部搜索,/search,done
+P04,商品详情,商品卡片,/product/:id,done
+P05,采购车,顶部采购车,/cart,done
+P06,提交询价,采购车与导航,/quote,done
+P07,个人中心,账户入口,/account,done
+P08,404,未知路由,*,done
